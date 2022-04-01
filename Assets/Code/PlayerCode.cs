@@ -19,7 +19,7 @@ public class PlayerCode : MonoBehaviour
     public TextMeshProUGUI scoreUI;
 
 
-    int bulletForce = 500; 
+    int bulletForce = 900; 
 
 
     void Start()
@@ -41,7 +41,8 @@ public class PlayerCode : MonoBehaviour
                 }
             }
 
-        if(Input.GetMouseButtonDown(1)){
+        if(Input.GetMouseButtonDown(1) && !_navAgent.hasPath){
+
             GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
             newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * bulletForce);
         }
