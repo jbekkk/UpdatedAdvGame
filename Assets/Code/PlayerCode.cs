@@ -41,7 +41,7 @@ public class PlayerCode : MonoBehaviour
                 }
             }
 
-        if(Input.GetMouseButtonDown(1) && !_navAgent.hasPath){
+        if(Input.GetMouseButtonDown(1)){
 
             GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
             newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * bulletForce);
