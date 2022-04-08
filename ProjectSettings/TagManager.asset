@@ -7,6 +7,7 @@ TagManager:
   - Coin
   - Key
   - Bullet
+  - Troll
   layers:
   - Default
   - TransparentFX
