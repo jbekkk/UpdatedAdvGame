@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WaterRoom.unity
     guid: 3d9744dbdc9b7cd4c9ff7d8f2dfa87fb
+  - enabled: 1
+    path: Assets/Scenes/GrassRoom.unity
+    guid: 9a21216a2c95444d0b010932222d373d
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 77e8448b33f4d0e42a8f3cfd3e2bc485
+  - enabled: 1
+    path: Assets/Scenes/BossLevel.unity
+    guid: 90389642d2e62be4894d5392fde3d0f2
   m_configObjects: {}

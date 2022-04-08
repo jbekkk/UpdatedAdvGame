@@ -22,7 +22,7 @@ public class BotCode : MonoBehaviour
     {
         while(true)
         {
-            yield return new WaitForSeconds(.5f);
+            yield return new WaitForSeconds(4f);
             _navAgent.destination = player.transform.position;
 
         }
