@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WaterRoom.unity
     guid: 3d9744dbdc9b7cd4c9ff7d8f2dfa87fb
+  - enabled: 1
+    path: Assets/Scenes/BossLevel.unity
+    guid: 90389642d2e62be4894d5392fde3d0f2
   m_configObjects: {}
