@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 
 public class PlayerCode : MonoBehaviour
 {
@@ -15,23 +15,23 @@ public class PlayerCode : MonoBehaviour
 
     public Transform spawnPoint;
     
-
     public TextMeshProUGUI scoreUI;
 
 
     int bulletForce = 900; 
+
+    int health = 10;
 
 
     void Start()
     {
         _navAgent = GetComponent<NavMeshAgent>();
         mainCam = Camera.main;
-        scoreUI.text = "Score: " + PublicVars.score;
+
     }
 
     private void Update() 
     {
-        
         if(Input.GetMouseButtonDown(0))
             {
                 RaycastHit hit;
@@ -45,6 +45,10 @@ public class PlayerCode : MonoBehaviour
 
             GameObject newBullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
             newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * bulletForce);
+        }
+        if(health <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
@@ -61,6 +65,18 @@ public class PlayerCode : MonoBehaviour
             Destroy(other.gameObject);
             PublicVars.score++;
             scoreUI.text = "Gold: " + PublicVars.score;
+        }
+
+        if(other.CompareTag("Coin"))
+        {
+            health -= 3;
+            scoreUI.text = "Health " + health;
+        }
+
+        if(other.CompareTag("Troll"))
+        {
+            health -= 3;
+            scoreUI.text = "Health " + health;
         }
 
         
