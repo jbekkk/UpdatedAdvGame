@@ -9,7 +9,7 @@ public class TrollCode : MonoBehaviour
     GameObject player;
     GameObject troll;
     Rigidbody trollRb;
-    int health = 150;
+    int health = 75;
     // Start is called before the first frame update
 
     Animator _animator;
@@ -34,9 +34,11 @@ public class TrollCode : MonoBehaviour
             {
                 _navAgent.destination = player.transform.position - new Vector3((float) 3,0, (float) 3);
             }
-            if(health == 0)
+            if(health <= 0)
             {
+                yield return new WaitForSeconds(1f);
                 Invoke("Death",1);
+                Destroy(gameObject);
             }
         }
     }
@@ -50,7 +52,7 @@ public class TrollCode : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Bullet"))
         {
-            
+            print(health);
             Destroy(other.gameObject);
             trollRb.AddForce(-1 * other.impulse);
             _animator.SetInteger("health", health - 5);

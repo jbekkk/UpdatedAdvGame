@@ -7,6 +7,9 @@ TagManager:
   - Coin
   - Key
   - Bullet
+  - Troll
+  - Keys
+  - Enemy
   layers:
   - Default
   - TransparentFX
