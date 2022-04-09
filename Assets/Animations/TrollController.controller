@@ -45,7 +45,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
+<<<<<<< HEAD
   m_TransitionDuration: 0
+=======
+  m_TransitionDuration: 0.25
+>>>>>>> 6dd6702cca4f81ebdee82f31a77292abee9c8189
   m_TransitionOffset: 0
   m_ExitTime: 0.7916668
   m_HasExitTime: 0
@@ -123,14 +127,22 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: nearPlayer
+<<<<<<< HEAD
     m_EventTreshold: 9
+=======
+    m_EventTreshold: 8
+>>>>>>> 6dd6702cca4f81ebdee82f31a77292abee9c8189
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7330799320743978457}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
+<<<<<<< HEAD
   m_TransitionDuration: 0
+=======
+  m_TransitionDuration: 0.25
+>>>>>>> 6dd6702cca4f81ebdee82f31a77292abee9c8189
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 0
@@ -202,7 +214,11 @@ AnimatorController:
   - m_Name: health
     m_Type: 3
     m_DefaultFloat: 0
+<<<<<<< HEAD
     m_DefaultInt: 75
+=======
+    m_DefaultInt: 150
+>>>>>>> 6dd6702cca4f81ebdee82f31a77292abee9c8189
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   m_AnimatorLayers:
@@ -235,7 +251,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
+<<<<<<< HEAD
   m_TransitionDuration: 0
+=======
+  m_TransitionDuration: 0.25
+>>>>>>> 6dd6702cca4f81ebdee82f31a77292abee9c8189
   m_TransitionOffset: 0
   m_ExitTime: 0.9375
   m_HasExitTime: 1
@@ -253,14 +273,22 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: nearPlayer
+<<<<<<< HEAD
     m_EventTreshold: 9
+=======
+    m_EventTreshold: 8
+>>>>>>> 6dd6702cca4f81ebdee82f31a77292abee9c8189
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2603834155786630309}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
+<<<<<<< HEAD
   m_TransitionDuration: 0
+=======
+  m_TransitionDuration: 0.25
+>>>>>>> 6dd6702cca4f81ebdee82f31a77292abee9c8189
   m_TransitionOffset: 0
   m_ExitTime: 0.7916668
   m_HasExitTime: 0
@@ -311,7 +339,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
+<<<<<<< HEAD
   m_TransitionDuration: 0
+=======
+  m_TransitionDuration: 0.25
+>>>>>>> 6dd6702cca4f81ebdee82f31a77292abee9c8189
   m_TransitionOffset: 0
   m_ExitTime: 0.8333333
   m_HasExitTime: 0
@@ -361,7 +393,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
+<<<<<<< HEAD
   m_TransitionDuration: 0
+=======
+  m_TransitionDuration: 0.25
+>>>>>>> 6dd6702cca4f81ebdee82f31a77292abee9c8189
   m_TransitionOffset: 0
   m_ExitTime: 0.7916668
   m_HasExitTime: 0

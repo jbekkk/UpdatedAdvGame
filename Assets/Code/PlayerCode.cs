@@ -74,5 +74,26 @@ public class PlayerCode : MonoBehaviour
             health -= 1;
             scoreUI.text = "Health " + health;
         }
+<<<<<<< HEAD
+=======
+
+        if(other.CompareTag("Coin"))
+        {
+            health -= 3;
+            scoreUI.text = "Health " + health;
+        }
+
+
+    }
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.CompareTag("Troll"))
+        {
+            print(health);
+            health -= 3;
+            print(health);
+            scoreUI.text = "Health " + health;
+        }
+>>>>>>> 6dd6702cca4f81ebdee82f31a77292abee9c8189
     }
 }

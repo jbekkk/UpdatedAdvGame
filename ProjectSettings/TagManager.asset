@@ -8,8 +8,11 @@ TagManager:
   - Key
   - Bullet
   - Troll
+<<<<<<< HEAD
   - Keys
   - Enemy
+=======
+>>>>>>> 6dd6702cca4f81ebdee82f31a77292abee9c8189
   layers:
   - Default
   - TransparentFX
